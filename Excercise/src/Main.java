@@ -20,8 +20,8 @@ public class Main {
 
         for (EnumMonth month: EnumMonth.values()){
             String support=month.toString();
-
-            if (support.contains("y")){
+            char y='y';
+            if (support.charAt(support.length()-1)==y){
                 System.out.println(month+" month end with y");
             }else{
                 System.out.println(month+" month doesn't end with y");
